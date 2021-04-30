@@ -1,0 +1,163 @@
+.reviews{
+    &__container{
+        padding: 40px 35px 80px;
+    }
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__item{
+        margin-bottom: 75px;
+        padding: 15px 15px 25px 15px;
+        background-color: #e0e7dd;
+    }
+    &__item-user{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
+    }
+    &__item-name{
+        margin: 0;
+        margin-bottom: 5px;
+        font-family: 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        line-height: 1;
+        color: #000;
+    }
+    &__item-role{
+        font-family: 'Trebuchet MS', sans-serif;
+        font-size: 14px;
+        line-height: 130%;
+        color: #000;
+    }
+    &__item-text{
+        margin: 0;
+        margin-bottom: 15px;
+        padding: 15px 15px 35px 15px;
+        background-color: #fff;
+        font-style: italic;
+        font-size: 16px;
+        line-height: 140%;
+        color: #000;
+    }
+    &__item-inner{
+        display: flex;
+        align-items: center;
+    }
+    &__item-value{
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+        font-family: 'Trebuchet MS', sans-serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 120%;
+    }
+    &__item-box{
+        display: flex;
+        margin-left: 10px;
+    }
+    &__item-img{
+        &:not(:last-child){
+            margin-right: 5px;
+        }
+    }
+    &__item-verdict{
+        margin: 0;
+        margin-right: 25px;
+        font-family: 'Trebuchet MS', sans-serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 120%;
+    }
+    &__item-link{
+        font-size: 14px;
+        line-height: 130%;
+        text-decoration: underline;
+        color: #000;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &__btn{
+        border-radius: 4px;
+        padding: 5px 20px;
+        background: linear-gradient(180deg, #FEB11B 0%, #F39601 100%), #C4C4C4;
+        font-size: 24px;
+        line-height: 1;
+        color: #fff;
+        transition: box-shadow .3s ease-in-out;
+        &:hover{
+            box-shadow: 0 0 10px 2px rgba(0,0,0,.4);
+        }
+    }
+}
+@media (max-width: 768px){
+    .reviews{
+        &__item-user{
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 576px){
+    .reviews{
+        &__container{
+            padding: 30px 10px 60px;
+        }
+        &__title{
+            margin-bottom: 25px;
+        }
+        &__item{
+            margin-bottom: 50px;
+            padding: 0;
+            background-color: #fff;
+        }
+        &__item-user{
+            align-items: flex-start;
+            padding-top: 0;
+        }
+        &__item-text{
+            margin-bottom: 25px;
+            padding: 0;
+        }
+        &__item-inner{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__item-value{
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        &__item-verdict{
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (max-width: 370px){
+    .reviews{
+        &__item-name{
+            font-size: 16px;
+        }
+        &__item-role{
+            font-size: 12px;
+        }
+        &__item-text{
+            font-size: 14px;
+        }
+        &__item-value{
+            font-size: 13px;
+        }
+        &__item-verdict{
+            font-size: 13px;
+        }
+        &__item-link{
+            font-size: 12px;
+        }
+        &__btn{
+            font-size: 18px;
+        }
+    }
+}

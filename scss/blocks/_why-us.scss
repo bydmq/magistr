@@ -1,0 +1,54 @@
+.why-us{
+    &__title{
+        margin-bottom: 55px;
+    }
+    &__content{
+        padding: 55px 35px;
+        background-color: #f8f8f8;
+    }
+    &__item-img{
+        margin-bottom: 15px;
+    } 
+    &__item-descr{
+        margin: 0;
+        font-size: 14px;
+        line-height: 140%;
+        color: #000;
+    }
+    &__info{
+        padding: 50px 35px;
+    }
+    &__descr{
+        margin: 0;
+        font-size: 14px;
+        line-height: 160%;
+        color: #000;
+    }
+    &__descr-item{
+        margin: 0;
+        font-size: 14px;
+        line-height: 160%;
+        color: #000;
+    }
+}
+@media (max-width: 576px){
+    .why-us{
+        &__content{
+            padding: 55px 10px;
+        }
+        &__info{
+            padding: 50px 10px;
+        }
+    }
+}
+@media (max-width: 370px){
+    &__item-descr{
+        font-size: 12px;
+    }
+    &__descr{
+        font-size: 12px;
+    }
+    &__descr-item{
+        font-size: 12px;
+    }
+}

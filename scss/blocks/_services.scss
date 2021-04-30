@@ -1,0 +1,175 @@
+.services{
+    &__inner{
+        background-color: #f8f8f8;
+    }
+}
+.services-nav{
+    padding: 35px 0 35px 30px;
+    &__title{
+        margin: 0;
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 160%;
+        color: #024b7d;
+    }
+    &__link{
+        position: relative;
+        display: block;
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 130%;
+        color: #000;
+        text-decoration: none;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: #316990;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+}
+.services-content{
+    height: 100%;
+    padding: 35px 50px;
+    background: linear-gradient(180deg, #71A7C3 0%, #2E638D 100%), #C4C4C4;
+    &__title{
+        margin: 0;
+        margin-bottom: 25px;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1;
+        color: #fff;
+    }
+    &__item{
+        margin-bottom: 15px;
+    }
+    &__item-title{
+        margin: 0;
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 140%;
+        color: #fff;
+    }
+    &__item-descr{
+        margin: 0;
+        font-size: 14px;
+        line-height: 140%;
+        color: #fff;
+    }
+    &__item-link{
+        font-size: 14px;
+        line-height: 140%;
+        text-decoration: underline;
+        color: #fff;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &__price{
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 26px;
+        line-height: 130%;
+        color: #fff;
+    }
+    &__btn{
+        border-radius: 4px;
+        margin-right: 25px;
+        padding: 5px 12px;
+        background: linear-gradient(180deg, #FEB11B 0%, #F39601 100%), #C4C4C4;
+        font-size: 24px;
+        line-height: 1;
+        color: #fff;
+        transition: box-shadow .3s ease-in-out;
+        &:hover{
+            box-shadow: 0 0 10px 2px rgba(0,0,0,.4);
+        }
+    }
+    &__link{
+        font-size: 14px;
+        line-height: 140%;
+        text-decoration: underline;
+        color: #fff;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &__descr{
+        margin: 0;
+        font-size: 14px;
+        line-height: 140%;
+        color: #c2d2df;
+    }
+}
+@media (max-width: 768px){
+    .services-nav{
+        order: 2;
+    }
+    .services-content{
+        order: 1;
+    }
+}
+@media (max-width: 576px){
+    .services-content{
+        &__title{
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+        &__btn{
+            margin-right: 50px;
+        }
+    }
+}
+@media (max-width: 370px){
+    .services-nav{
+        &__title{
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        &__link{
+            padding-left: 17px;
+            font-size: 12px;
+            &::before{
+                top: 4px;
+                width: 7px;
+                height: 7px;
+            }
+        }
+    }
+    .services-content{
+        &__title{
+            font-size: 24px;
+        }
+        &__item-title{
+            font-size: 12px;
+        }
+        &__item-descr{
+            font-size: 12px;
+        }
+        &__price{
+            font-size: 20px;
+        }
+        &__btn{
+            font-size: 18px;
+            margin-right: 40px;
+        }
+        &__link{
+            font-size: 12px;
+        }
+        &__descr{
+            font-size: 12px;
+        }
+    }
+}
